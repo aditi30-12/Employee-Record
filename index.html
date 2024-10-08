@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Record</title>
+    <link rel="stylesheet" href="./index.css"/>
+
+</head>
+<h1>Employe Record</h1>
+<body>
+    <div>
+        <form id="form">
+        <label>Name</label><br/>
+        <input id="name" type="text" placeholder="Enter Name"/><br/>
+        <label>Employee Id</label>
+        <input id="EmployeeId" type="text" placeholder="Enter Id"/><br/>
+        <label>Department</label>
+        <select id="Department">
+            <option value="">Department</option>
+            <option value="Frontend">Frontend</option>
+            <option value="">Backend</option>
+            <option value="HR">HR</option>
+            <option value="IA">IA</option>
+        </select>
+        <br/>
+        <label>Experience</label>
+        <input id="exp" type="number" placeholder="Experience in Years">
+        <br>
+        <label>Mobile Number</label>
+        <input id="mobile" type="number" placeholder="enter Mobile Number">
+        <br>
+        <input type="submit"/>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>EmployeeId</th>
+                <th>Department</th>
+                <th>Experience</th>
+                <th>Mobile Number</th>
+                <th>Role</th>
+                <th>Delete</th>                
+            </tr>
+        </thead>
+        <tbody id="tbody">
+        </tbody>
+    </table>
+    </div>
+</body>
+</html>
+<script src="./record.js"></script>
